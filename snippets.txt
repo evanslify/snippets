@@ -1,0 +1,5 @@
+// removes all excess newlines(\n) in this folder with awk
+
+for i in $(ls); do awk -v RS= -v ORS='\n\n' '1' "$i"; done
+
+
